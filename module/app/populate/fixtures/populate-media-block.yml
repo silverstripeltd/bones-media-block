@@ -1,0 +1,46 @@
+SilverStripe\Assets\Image:
+  image1:
+    Title: Image 1
+    Filename: assets/image1.jpg
+    PopulateFileFrom: app/populate/fixtures/assets/placeholder.png
+
+App\Blocks\MediaBlock:
+  mediablock-image-full:
+    Title: Heading 1
+    ShowTitle: 1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.about-us
+    MediaType: Image
+    VideoLink: null
+    FitSize: Full
+    Image: =>SilverStripe\Assets\Image.image1
+  mediablock-image-contained:
+    Title: Heading 2
+    ShowTitle: 1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.about-us
+    MediaType: Image
+    VideoLink: null
+    FitSize: Contained
+    Image: =>SilverStripe\Assets\Image.image1
+  mediablock-video-full:
+    Title: Heading 3
+    ShowTitle: 1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.about-us
+    MediaType: Video 
+    VideoLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lS0WBxL6tUk" 
+                title="YouTube video player" frameborder="0" allow="accelerometer;
+                autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>'
+    FitSize: Contained
+    Image: null
+  mediablock-video-contained:
+    Title: Heading 4
+    ShowTitle: 1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.page1
+    MediaType: Video
+    VideoLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lS0WBxL6tUk" 
+                title="YouTube video player" frameborder="0" allow="accelerometer;
+                autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>' 
+    FitSize: Contained
+    Image: null     
+    

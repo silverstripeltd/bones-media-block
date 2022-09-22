@@ -1,0 +1,7 @@
+{
+    "composer": {
+        "require": {
+        "unclecheese/display-logic": "^2.0"
+        }
+    }
+}

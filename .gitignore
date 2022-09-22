@@ -1,0 +1,6 @@
+# Default OS files
+.DS_Store
+
+# IDE/Editor files
+/.idea
+/.vscode
